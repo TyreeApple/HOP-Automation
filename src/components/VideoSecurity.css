@@ -1,0 +1,58 @@
+/* Video Security Styles */
+video {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Disable drag and drop */
+video::-webkit-media-controls {
+  -webkit-appearance: none;
+}
+
+video::-webkit-media-controls-enclosure {
+  -webkit-appearance: none;
+}
+
+video::-webkit-media-controls-panel {
+  -webkit-appearance: none;
+}
+
+/* Hide download button in some browsers */
+video::-webkit-media-controls-download-button {
+  display: none !important;
+}
+
+video::-webkit-media-controls-fullscreen-button {
+  display: none !important;
+}
+
+/* Prevent text selection around video */
+.video-container {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Disable right-click context menu */
+.video-container video {
+  pointer-events: auto;
+}
+
+.video-container {
+  pointer-events: none;
+}
+
+/* Additional protection */
+video::cue {
+  display: none;
+}
+
+video::-webkit-media-text-track-container {
+  display: none;
+}
