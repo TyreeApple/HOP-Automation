@@ -52,7 +52,6 @@ const Hero = () => {
               src="/Demo-small.mp4"
               autoPlay
               loop
-              muted
               playsInline
               controls
               controlsList="nodownload nofullscreen noremoteplayback"
