@@ -13,7 +13,7 @@ const Navbar = () => {
           className="hover:opacity-80 transition-opacity md:w-20 md:h-6 w-16 h-5" 
           width={64} 
           height={20}
-          mobileLogoSrc="/Untitled design.svg"
+          mobileLogoSrc="/mobile-hop.svg"
           desktopLogoSrc="/hop-logo.png"
         />
         

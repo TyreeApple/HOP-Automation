@@ -12,7 +12,7 @@ const Logo: React.FC<LogoProps> = ({
   className, 
   width = 120, 
   height = 40,
-  mobileLogoSrc = "/Untitled design.svg",
+  mobileLogoSrc = "/mobile-hop.svg",
   desktopLogoSrc = "/hop-logo.png"
 }) => {
   return (
