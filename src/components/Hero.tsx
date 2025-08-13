@@ -47,24 +47,23 @@ const Hero = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
-            {/* Video placeholder - replace with your hosted video URL */}
-            <div className="w-full h-96 bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center border border-accent/20">
-              <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-accent/20 rounded-full flex items-center justify-center">
-                  <Phone className="w-8 h-8 text-accent" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-white">Demo Video</h3>
-                  <p className="text-white/60 max-w-sm">
-                    See Lillie AI in action - handling calls, booking appointments, and converting leads 24/7
-                  </p>
-                  <Button className="mt-4">
-                    Watch Demo
-                  </Button>
-                </div>
-              </div>
-            </div>
+          <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl video-container">
+            <video 
+              src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              controlsList="nodownload nofullscreen noremoteplayback"
+              disablePictureInPicture
+              onContextMenu={(e) => e.preventDefault()}
+              onDragStart={(e) => e.preventDefault()}
+              className="w-full h-auto object-cover select-none"
+              style={{ maxHeight: '500px', pointerEvents: 'auto' }}
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
 
         </div>
