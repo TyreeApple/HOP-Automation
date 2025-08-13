@@ -24,5 +24,6 @@ dist-ssr
 *.sw?
 
 # Large video files (except MOV and MP4 which are tracked by Git LFS)
+# Small MP4 files under 10MB are allowed
 *.avi
 *.mkv
