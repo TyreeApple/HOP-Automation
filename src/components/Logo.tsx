@@ -16,7 +16,7 @@ const Logo: React.FC<LogoProps> = ({
   desktopLogoSrc = "/mobile-hop.svg"
 }) => {
   return (
-    <>
+    <div className="flex-shrink-0">
       {/* Mobile Logo */}
       <img
         src={mobileLogoSrc}
@@ -39,7 +39,7 @@ const Logo: React.FC<LogoProps> = ({
           display: 'block'
         }}
       />
-    </>
+    </div>
   );
 };
 
