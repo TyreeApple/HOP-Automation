@@ -47,25 +47,23 @@ const Hero = () => {
           </div>
         </div>
         <div className="relative">
-          <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
-            <div className="w-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex items-center justify-center" style={{ height: '400px' }}>
-              <div className="text-center text-white p-8">
-                <div className="animate-pulse mb-4">
-                  <div className="w-20 h-20 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                </div>
-                <h3 className="text-2xl font-bold mb-2">Demo Video</h3>
-                <p className="text-white/80 mb-4">See Lillie AI in action</p>
-                <div className="flex justify-center space-x-4">
-                  <div className="w-3 h-3 bg-white/60 rounded-full animate-bounce" style={{ animationDelay: '0ms' }}></div>
-                  <div className="w-3 h-3 bg-white/60 rounded-full animate-bounce" style={{ animationDelay: '150ms' }}></div>
-                  <div className="w-3 h-3 bg-white/60 rounded-full animate-bounce" style={{ animationDelay: '300ms' }}></div>
-                </div>
-              </div>
-            </div>
+          <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl video-container">
+            <video 
+              src="/Demo.MOV"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              controlsList="nodownload nofullscreen noremoteplayback"
+              disablePictureInPicture
+              onContextMenu={(e) => e.preventDefault()}
+              onDragStart={(e) => e.preventDefault()}
+              className="w-full h-auto object-cover select-none"
+              style={{ maxHeight: '500px', pointerEvents: 'auto' }}
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
 
         </div>

@@ -23,9 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Large video files
-public/Demo.MOV
-*.MOV
+# Large video files (except MOV which are tracked by Git LFS)
 *.mp4
 *.avi
 *.mkv
