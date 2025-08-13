@@ -14,7 +14,7 @@ const Navbar = () => {
           width={120} 
           height={40}
           mobileLogoSrc="/mobile-hop.svg"
-          desktopLogoSrc="/hop-logo.png"
+          desktopLogoSrc="/mobile-hop.svg"
         />
         
         {/* Center navigation links */}
