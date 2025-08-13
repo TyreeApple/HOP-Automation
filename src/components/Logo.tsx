@@ -17,22 +17,10 @@ const Logo: React.FC<LogoProps> = ({
 }) => {
   return (
     <div className="flex-shrink-0">
-      {/* Mobile Logo */}
       <img
         src={mobileLogoSrc}
         alt="HOP Logo"
-        className={`rounded-lg object-contain md:hidden ${className}`}
-        width={width}
-        height={height}
-        style={{ 
-          display: 'block'
-        }}
-      />
-      {/* Desktop Logo */}
-      <img
-        src={desktopLogoSrc}
-        alt="HOP Logo"
-        className={`rounded-lg object-contain hidden md:block ${className}`}
+        className={`rounded-lg object-contain ${className}`}
         width={width}
         height={height}
         style={{ 
