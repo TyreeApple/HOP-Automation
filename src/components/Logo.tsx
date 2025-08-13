@@ -11,11 +11,10 @@ const Logo: React.FC<LogoProps> = ({ className, width = 120, height = 40 }) => {
     <img
       src="/Untitled design.svg"
       alt="HOP Logo"
-      className={`rounded-lg ${className}`}
+      className={`rounded-lg object-contain ${className}`}
       width={width}
       height={height}
       style={{ 
-        objectFit: 'contain', 
         display: 'block'
       }}
     />
