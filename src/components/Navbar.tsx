@@ -10,9 +10,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 px-4 md:px-6 py-2 md:py-3 bg-background/80 backdrop-blur-lg">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Logo 
-          className="hover:opacity-80 transition-opacity md:w-20 md:h-6 w-16 h-5" 
-          width={64} 
-          height={20}
+          className="hover:opacity-80 transition-opacity" 
+          width={120} 
+          height={40}
           mobileLogoSrc="/mobile-hop.svg"
           desktopLogoSrc="/hop-logo.png"
         />
