@@ -49,7 +49,7 @@ const Hero = () => {
         <div className="relative">
           <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl video-container">
             <video 
-              src="/Demo.MOV"
+              src="/Demo.mp4"
               autoPlay
               loop
               muted
